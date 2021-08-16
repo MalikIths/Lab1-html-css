@@ -1,0 +1,198 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+    /* min-width: 720px; */
+}
+
+.logo {
+    position: relative;
+    color: darkblue;
+    margin: 0;
+    padding: 0rem 1rem;
+}
+
+.head {
+    margin: auto;
+    width: fit-content;
+}
+
+.column {
+    float: left;
+    padding: 0rem 0.5rem;
+    height: auto;
+}
+
+.left, .right {
+    width: 20%;
+}
+
+.middle {
+    width: 60%;
+}
+
+.container {
+    /* min-width: 720px; */
+}
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    width: 100vw;
+    margin: 0px;
+    padding: 0rem;
+    height: fit-content;
+    /* min-width: 720px; */
+}
+.kontakt {
+    margin: auto;
+    padding: 1rem 2rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.kontaktInfo {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+
+.profile {
+    position: relative;
+    border: gray solid 1px;
+    width: 425px;
+    height: 190px;
+    margin: 0.3rem;
+}
+
+#vdBild {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 250px;
+}
+
+#namnYrke {
+    position: absolute;
+    left: 270px;
+    top: 0px;
+}
+
+#namn {
+    margin: 0.5rem 0rem;
+}
+
+#yrke {
+    margin: 0.5rem 0rem;
+}
+
+#specialty {
+    position: absolute;
+    left: 270px;
+    top: 90px;
+}
+
+#spec {
+    margin: 0rem;
+}
+#ul {
+    margin: 0rem;
+}
+.li {
+    margin: 0rem;
+}
+
+#id4Bild {
+    width: 150px;
+    border-radius: 8px;
+}
+
+#id4Titel {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.bil {
+    clear: both;
+    margin: 3rem;
+}
+.golfBild {
+    width: 300px;
+    padding: 1rem;
+    float: left;
+    border-radius: 30px;
+}
+.golfTitel {
+    padding: 1rem;
+}
+
+.allaBilar {
+    width: 100%;
+    height: 100%;
+    margin: 0rem;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+}
+
+table, th, td {
+    border: gray solid 1px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+}
+
+a {
+    color: black;
+}
+
+@media only screen and (max-width: 720px) {
+    .left, .middle, .right {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .middle {
+        order: 1;
+    }
+    .left {
+        order: 2;
+    }
+    .menu {
+        width: fit-content;
+        margin: auto;
+    }
+    .right {
+        order: 3;
+    }
+    .myAside {
+        width: fit-content;
+        margin: auto;
+    }
+}
